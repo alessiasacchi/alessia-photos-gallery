@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Alessia Sacchi">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Contact me</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="css/photos.css" >
+    <link rel="stylesheet" href="css/form-validation.css" >
+    
+
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <img class="logo" src="img/hammerhead-as-white.png">
+          <h3 class="masthead-brand">Alessia Photo Gallery</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="home">Home</a>
+            <a class="nav-link" href="collections">Collections</a>
+            <a class="nav-link active" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </div>   
+
+    <div class="container">
+      <h1 class="jumbotron-heading">Get in touch</h1>
+      <p class="lead text-muted">I'd love to hear from you. Here's how you can reach me ...</p>
+      <div id="alertMessage" class="invisible" role="alert"> 
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="flex-column">
+
+        
+        <div style="margin-top: 30px; text-align: left;" class="col-md-8 order-md-1">
+              <!--h4 class="mb-3">Billing address</h4-->
+              <form class="needs-validation" id="messageForm" action="/sendMessage" method="post" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="label" for="firstName">First name</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder=""  >
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" >
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                </div>
+                 <div class="mb-3">
+                  <label for="email">Email <span class="text-muted"></span></label>
+                  <input type="email" class="form-control" id="email" name="email" required="" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message">Message <span class="text-muted"></span></label>
+                  <textarea class="form-control" id="message" name="message" placeholder="Write your message" rows="4" required=""></textarea>
+                  <div class="invalid-feedback">
+                    Your message cannot be empty.
+                  </div>
+                </div>
+                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LfCKPIUAAAAAALQG3_17FE8bxukBtA95quMQU05"></div>
+                <button class="btn btn-primary btn-lg btn-block"  formaction="/sendMessage" type="submit">Send message</button>
+              </form>
+        </div>
+        <div style="margin-top: 30px" class="col-md-4 order-md-1">
+          
+            <a href="https://www.instagram.com/sacchialessia/" target="_blank">
+              <img style="width: 25%" src="img/instagram.png">
+            </a>
+            <a href="http://facebook.com/alessia.sacchi.96/" target="_blank">
+              <img style="width: 20%" src="img/facebook.png">
+            </a>
+            <a href="http://www.linkedin.com/in/alessia-sacchi-7791156" target="_blank">
+              <img style="width: 28%" src="img/linkedin.png">
+            </a>  
+         
+        </div> 
+      </div>  
+    </div>
+
+    <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p style="color: white; font-size: 0.6rem; margin-top: 20px; "> © 2020 Alessia Sacchi.  All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    
+</body>
+</html>

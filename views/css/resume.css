@@ -1,0 +1,157 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+}
+
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-family: 'Raleway';
+  background-color: #050e1f; 
+  display: -ms-flexbox;
+  color: #fff;
+  
+}
+
+.cover-container {
+  max-width: 35em;
+}
+
+.text-muted {
+    color: #6c757d!important;
+    font-size: 1.3rem;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.masthead-brand-contacts{
+  margin-top: 3px;
+  color: rgba(255, 255, 255, .5);
+}
+
+
+.container{
+  background-color: #fff;
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+.education{
+  text-align: center;
+  background-color: #E9ECEF;
+  line-height: 1.5;
+  color: #212529;
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+
+.experience{
+  text-align: center;
+  background-color: #fff;
+  line-height: 1.5;
+  color: #212529;
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+
+.single-experience{
+  text-align: left;
+  background-color: #fff;
+  line-height: 1.5;
+  color: #212529;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.jumbotron-heading {
+    font-weight: 200;
+    color: #050e1f;
+    font-size: 2rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.btn-primary{
+    margin-right: 3px;
+    
+}
+
+@media (max-width: 769px) {
+  
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 18rem;
+    margin-left: 6px;
+  }
+}
+

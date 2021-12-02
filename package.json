@@ -1,0 +1,23 @@
+{
+  "name": "alessia-photos-gallery",
+  "version": "1.0.0",
+  "description": "My photos gallery - node js express bootsrap app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Alessia Sacchi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "googleapis": "^49.0.0",
+    "jimp": "^0.10.1",
+    "node-fetch": "^2.6.0",
+    "node-html-parser": "^1.2.16",
+    "nodemailer": "^6.4.6",
+    "request": "^2.88.2",
+    "resize-optimize-images": "^1.1.0"
+  }
+}

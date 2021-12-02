@@ -1,0 +1,42 @@
+
+.container {
+  max-width: 1000px;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #212529;
+  text-align: -webkit-center;
+  
+}
+
+
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top-gray { border-top-color: #adb5bd; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-condensed { line-height: 1.25; }
+
+.jumbotron-paragraph {
+	margin-bottom: 40px;
+
+}
+
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.g-recaptcha {
+   margin-bottom: 20px;
+   
+}
+
+.instagram {
+	image-rendering: : url('../img/instagram.png');
+	width: 25%;
+}
